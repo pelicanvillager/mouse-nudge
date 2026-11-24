@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "定时鼠标移动",
+  "description": "按设定间隔在选中的网页内轻移鼠标。",
+  "version": "1.0.0",
+  "minimum_chrome_version": "118",
+  "permissions": ["activeTab", "debugger", "storage"],
+  "background": { "service_worker": "background.js" },
+  "action": {
+    "default_title": "定时鼠标移动",
+    "default_popup": "popup.html"
+  }
+}
